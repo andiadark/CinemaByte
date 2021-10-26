@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@android:drawable/btn_star" />
+
+    <EditText
+        android:id="@+id/regUsername"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/ivLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/joti_one"
+        android:background="@drawable/rounded"
+        android:textColorHint="@color/black"
+        android:hint="Username"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/regPassword"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/regUsername"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded"
+        android:hint="Password"
+        android:fontFamily="@font/joti_one"
+        android:textAlignment="center"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/regEmail"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/regPassword"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/joti_one"
+        android:background="@drawable/rounded"
+        android:hint="Email"
+        android:textAlignment="center"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/regState"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/regEmail"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded"
+        android:fontFamily="@font/joti_one"
+        android:hint="State"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/regZipcode"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/regState"
+        android:fontFamily="@font/joti_one"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded"
+        android:hint="Zipcode"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        />
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regZipcode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FFF500"
+        android:textColor="@color/black"
+        android:fontFamily="@font/joti_one"
+        android:text="Register"
+        tools:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnGoLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnReg"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/joti_one"
+        android:background="#00FFFFFF"
+        android:text="Already have an Account? Login" />
+<!--    android:fontFamily="@font/joti_one"-->
+
+
+
+
+
+
+</RelativeLayout>
